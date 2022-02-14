@@ -16,8 +16,9 @@ nav {
 .nav__text {
   font-size: 1.5rem;
   font-weight: 500;
-  color: var(--secondary-color);
+  color: var(--primary-color);
   margin: 0 auto;
+  text-align: center;
 }
 
 .nav__options {
@@ -28,8 +29,9 @@ nav {
 }
 
 .nav__options h3 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 400;
+  color: var(--primary-color);
 }
 
 .nav__options section {
@@ -46,6 +48,54 @@ nav {
 
 .nav__options > .logoutIcon {
   width: 60px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 2em 0;
+  gap: 1em;
+}
+
+
+.card {
+  background-color: white;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 200ms;
+}
+
+.card:hover {
+  border: 2px solid #3f3d56;
+  transition: all 200ms;
+}
+
+.card__text_wrapper {
+  background-color: #14be39;
+  padding: 0.5em 2em;
+}
+
+.card p {
+  color: white;
+  font-weight: 450;
+}
+
+.card__img {
+  padding: 1em;
+  width: 180px;
+}
+
+/* main */
+
+main {
+  margin-top: 2.5em;
+}
+
+main h2 {
+  color: var(--primary-color);
+  font-weight: 400;
+  font-size: 1.25rem;
 }
 
 @media screen and (max-width: 757px) {
