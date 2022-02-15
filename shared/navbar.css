@@ -1,0 +1,65 @@
+nav {
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.nav__logo {
+  width: 95px;
+}
+
+.nav__text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  margin: 0 auto;
+  text-align: center;
+  user-select: none;
+}
+
+.nav__options {
+}
+
+.nav__options > * + * {
+  margin-top: 0.4em;
+}
+
+.nav__options h3 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+
+.nav__options section {
+  display: flex;
+  align-items: center;
+  color: #c72828;
+  cursor: pointer;
+  height: auto;
+}
+
+.nav__options section > * + * {
+  margin-left: 0.5em;
+  text-decoration: underline;
+}
+
+.nav__options > .logoutIcon {
+  width: 60px;
+}
+
+@media screen and (max-width: 757px) {
+  nav {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  nav > * + * {
+    margin-top: 1em;
+  }
+
+  .nav__options {
+    color: var(--secondary-color);
+  }
+}
