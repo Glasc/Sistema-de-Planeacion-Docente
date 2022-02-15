@@ -2,23 +2,20 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 2em 0;
+  margin: 1em 0;
   gap: 1em;
 }
 
 .card {
   background-color: white;
   cursor: pointer;
-  border: 2px solid transparent;
   transition: all 200ms;
   box-shadow: 0 2px 10px rgba(50, 50, 93, 0.1);
 }
 
 .card:hover {
-  border: 2px solid #3f3d56;
   transition: all 200ms;
-  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
-    0 15px 40px rgba(166, 173, 201, 0.2);
+  box-shadow: 0 0 35px -2px rgba(0,0,0,.2);
 }
 
 .card__text_wrapper {
@@ -30,13 +27,25 @@
 
 .card p {
   color: white;
-  font-weight: 450;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
 }
 
 .card__img {
   padding: 1em;
   width: 180px;
+}
+
+.section-text-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.section-text-wrapper > * + *{
+  margin-left: 0.5em;
+}
+
+.section-text-wrapper i {
+  color: var(--secondary-color);
 }
 
 /* main */
@@ -46,8 +55,5 @@ main {
 }
 
 main h2 {
-  color: var(--primary-color);
-  font-weight: 400;
-  font-size: 1.25rem;
+  display: inline-block;
 }
-

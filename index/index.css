@@ -137,16 +137,15 @@ main {
   margin-bottom: 0;
   font-size: 1.1rem;
   transition: all 200ms;
-  border: 2px solid transparent;
 }
 
 .form__button-submit:hover {
   transition: all 200ms;
-  box-shadow: 0 4px 14px 0 #d3af68;
+  box-shadow: 0 4px 14px 0 var(--tec-color-tertiary);
 }
 
 .form__button-submit:focus {
-  background-color: #a07d37;
+  background-color: var(--tec-color-hover);
 }
 
 /* medias */

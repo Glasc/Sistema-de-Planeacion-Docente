@@ -1,6 +1,9 @@
 :root {
   --tec-color: #c0963f;
-  --primary-color: #413c3c; 
+  --tec-color-secondary: #d3af68;
+  --tec-color-tertiary: #dbba78;
+  --tec-color-hover: #a07d37;
+  --primary-color: #2b2b2b;
   --secondary-color: #474747;
   --tertiary-color: #f5f5f5;
 }
@@ -34,4 +37,22 @@ body {
   position: relative;
 }
 
-/* navbar */
+/* fonts */
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+h2 {
+  font-weight: 450;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: var(--primary-color);
+}
