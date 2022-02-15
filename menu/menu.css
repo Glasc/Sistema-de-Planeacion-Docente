@@ -19,9 +19,12 @@ nav {
   color: var(--primary-color);
   margin: 0 auto;
   text-align: center;
+  user-select: none;
+
 }
 
 .nav__options {
+
 }
 
 .nav__options > * + * {

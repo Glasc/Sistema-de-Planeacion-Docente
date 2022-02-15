@@ -47,6 +47,7 @@ nav {
   width: 95px;
   object-fit: cover;
   object-position: 50% 50%;
+  pointer-events: none;
 }
 
 .nav__text {
@@ -54,6 +55,8 @@ nav {
   font-weight: 500;
   color: var(--primary-color);
   margin: 0 auto;
+  user-select: none;
+
 }
 
 main {
@@ -68,6 +71,7 @@ main {
 
 .main__img {
   width: 100%;
+  pointer-events: none;
 }
 
 /* forms */
