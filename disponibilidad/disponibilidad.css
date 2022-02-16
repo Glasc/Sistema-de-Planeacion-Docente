@@ -37,18 +37,45 @@ main section {
   width: 75%;
 }
 
-.menu {
-  background-color: white;
-  width: 25%;
+.menus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.menu__info {
+  background-color: #ffffff;
   padding: 1em;
   box-shadow: 0 2px 10px rgba(50, 50, 93, 0.1);
+  border-radius: 7px;
+  text-align: center;
+}
+
+.menu__info > * + * {
+  margin-top: 0.5em;
+}
+
+.menu__info h4 {
+  background-color: var(--tertiary-color);
+}
+
+.menu {
+  background-color: white;
+  width: 100%;
+  padding: 1em;
+  box-shadow: 0 2px 10px rgba(50, 50, 93, 0.1);
+  border-radius: 7px;
+  text-align: center;
 }
 
 .menu > * + * {
   margin-top: 1em;
 }
 
-.menu p {
+.menu span {
+  display: block;
   cursor: pointer;
   padding: 0.5em;
   transition: all 250ms;
