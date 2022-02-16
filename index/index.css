@@ -19,7 +19,7 @@
 html,
 body {
   background-color: var(--tertiary-color);
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -92,7 +92,7 @@ main {
   margin-top: 1.2em;
 }
 
-.form__main__text {
+.form__text {
   font-weight: 500;
   font-size: 1.3rem;
   text-align: center;
@@ -151,8 +151,10 @@ main {
   background-color: var(--tec-color-hover);
 }
 
-/* modal */
-
+.wave {
+  position: absolute;
+  bottom: 0;
+}
 
 /* medias */
 
