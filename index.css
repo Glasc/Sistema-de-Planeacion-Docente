@@ -72,6 +72,10 @@ main {
   gap: 1em;
 }
 
+main * {
+  z-index: 1;
+}
+
 .main__img {
   width: 100%;
   pointer-events: none;
@@ -89,7 +93,7 @@ main {
 }
 /* spacing */
 .form__wrapper > * + * {
-  margin-top: 1.2em;
+  margin-top: 1em;
 }
 
 .form__text {
@@ -101,6 +105,10 @@ main {
 .form__control {
   display: flex;
   flex-direction: column;
+}
+
+.form__control * {
+  margin-top: 0.35em;
 }
 
 .form__control label {
@@ -154,6 +162,8 @@ main {
 .wave {
   position: absolute;
   bottom: 0;
+  right: 0;
+  left: 0;
 }
 
 /* medias */

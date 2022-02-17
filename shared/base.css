@@ -23,6 +23,7 @@ html,
 body {
   background-color: var(--tertiary-color);
   min-height: 100%;
+
   width: 100%;
   display: flex;
   justify-content: center;
@@ -31,10 +32,12 @@ body {
 .container {
   min-height: 100%;
   width: min(90%, 900px);
+  z-index: 1;
 }
+
 /* spacing */
+
 .container > * + * {
-  position: relative;
 }
 
 /* fonts */
