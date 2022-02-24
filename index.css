@@ -1,3 +1,58 @@
+/* 
+
+const isALetter = (letter) => {
+  returnletter.toUpperCase() !== letter.toLowerCase()
+}
+
+
+
+function steamrollArray(arr, idx = 0) {
+  if (typeof arr[idx] === "number") {
+    if (idx === arr.length - 1) return arr
+    return steamrollArray(arr, idx + 1)
+  }
+  if (typeof arr[idx] === "undefined") {
+    if (idx === arr.length - 1) return arr
+    return steamrollArray(arr, idx + 1)
+  }
+
+  let newArr = [...arr]
+
+  if (newArr[idx].length > 1) {
+    newArr[idx].reverse().forEach((element) => {
+      newArr.splice(idx, 0, element)
+    })
+    newArr.splice(idx + arr[idx].length, 1)
+
+
+  } else {
+    newArr[idx] = newArr[idx][0]
+
+  }
+  return steamrollArray(newArr)
+
+
+}
+
+console.log(
+  steamrollArray([[], [4, 9], [5, [7, 1]]])
+)
+
+// console.log(
+//   steamrollArray([[3, [[4]]]])
+// )
+
+
+// steamrollArray([1, [2], [3, [[4]]]]);
+
+/*
+  ([1, [2], [3, [[4]]]])
+  ([1, 2, [3, [[4]]]])
+  ([1, 2, 3, [[4]]])
+  ([1, 2, 3, [4]])
+*/
+*/
+
 :root {
   --tec-color: #c0963f;
   --tec-color-lighter: #caa04b;
