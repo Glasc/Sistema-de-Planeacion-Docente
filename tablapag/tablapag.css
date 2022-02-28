@@ -1,0 +1,85 @@
+.table__wrapper {
+}
+
+.tablee {
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+}
+
+.table__head {
+  background-color: var(--tec-color);
+  color: white;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+.table__head th {
+  font-weight: 500;
+}
+
+.tablee tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.tablee tbody tr:nth-of-type(even) {
+  background-color: #f1ebe1;
+}
+
+.tablee tbody tr:last-of-type {
+  border-bottom: 2px solid var(--tec-color);
+}
+
+.tablee td,
+.tablee th {
+  padding: 0.5em;
+}
+
+.tablee td {
+  font-size: 0.9rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.pagination {
+  display: flex;
+  margin-top: 1em;
+}
+
+.pagination > * + * {
+  margin-left: 1em;
+}
+
+.btn {
+  background-color: white;
+  color: #2b2b2b;
+  border-radius: 8px;
+  padding: 0.5em 1em;
+  transition: all 200ms ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  filter: brightness(111%);
+  transition: all 200ms ease;
+}
+
+.btn-disabled {
+  border: 2.5px solid var(--tec-color);
+  background-color: transparent;
+}
+
+.btn-next {
+  border: 2.5px solid transparent;
+  background-color: var(--tec-color);
+  color: white;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

@@ -1,0 +1,81 @@
+<!--
+  TODO:
+  Botones editar y eliminar en cada columna
+  Boton crear
+  ---->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disponibilidad</title>
+    <script
+      src="https://kit.fontawesome.com/01adc37bf7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../shared/base.css" />
+    <link rel="stylesheet" href="../shared/navbar.css" />
+    <link rel="stylesheet" href="./tablapag.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <img class="nav__logo" src="../assets/teclogo.jpg" alt="logo" />
+        <h1 class="nav__text">Sistema de Planeación Docente</h1>
+        <div class="nav__options">
+          <h3>Bienvenido, César</h3>
+          <section>
+            <i class="logoutIcon fa-lg fa-solid fa-right-from-bracket"></i>
+            <p>Cerrar sesión</p>
+          </section>
+        </div>
+      </nav>
+      <main>
+        <h2>Index</h2>
+        <p class="btn">
+          <a href="/Perfil/Create">Create New</a>
+        </p>
+        <div class="table__wrapper">
+          <table class="tablee">
+            <tbody>
+              <tr class="table__head">
+                <th>Nombre del Perfil</th>
+                <th></th>
+              </tr>
+              <tr>
+                <td>Administrador</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>OPERADOR</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>loganA</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>cambio</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>prueba 3</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <ul class="pagination">
+          <li class="btn btn-disabled disabled"><a href="/Perfil/Index/1">< Anterior</a></li>
+          <li class="btn btn-next"><a href="/Perfil/Index/2">Siguiente ></a></li>
+        </ul>
+      </main>
+    </div>
+  </body>
+</html>
