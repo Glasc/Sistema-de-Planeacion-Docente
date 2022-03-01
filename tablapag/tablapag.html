@@ -1,6 +1,6 @@
 <!--
   TODO:
-  Botones editar y eliminar en cada columna
+  Botones edi y eli en cada columna
   Boton crear
   ---->
 
@@ -38,38 +38,46 @@
       </nav>
       <main>
         <div class="content">
-          <h2>Index</h2>
-      
-          <div class="table__wrapper">
-            <table class="tablee">
+          
+          <section class="create">
+            <h2>Index</h2>
+            <p class="btn btn-nuevo">
+              <a href="/Perfil/Create">Crear nuevo</a>
+            </p>
+          </section>
+
+          <div class="table__wrapper" style="overflow-x: auto">
+            <table>
+              <thead>
+                <tr>
+                  <th>Account</th>
+                  <th>Due Date</th>
+
+                </tr>
+              </thead>
               <tbody>
-                <tr class="table__head">
-                  <th>Nombre del Perfil</th>
-                  <th></th>
+                <tr>
+                  <td>Visa - 3412</td>
+                  <td>04/01/2016</td>
+
                 </tr>
                 <tr>
-                  <td>Administrador</td>
-                  <td></td>
+                  <td>Visa - 6076</td>
+                  <td>03/01/2016</td>
+
                 </tr>
                 <tr>
-                  <td>OPERADOR</td>
-                  <td></td>
+                  <td>Corporate AMEX</td>
+                  <td>03/01/2016</td>
+
                 </tr>
                 <tr>
-                  <td>loganA</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>cambio</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>prueba 3</td>
-                  <td></td>
+                  <td>Visa - 3412</td>
+                  <td>02/01/2016</td>
+
                 </tr>
               </tbody>
             </table>
-          </div>
           <ul class="pagination">
             <li class="btn btn-previous disabled">
               <a href="/Perfil/Index/1">< Anterior</a>
@@ -77,9 +85,6 @@
             <li class="btn btn-next">
               <a href="/Perfil/Index/2">Siguiente ></a>
             </li>
-            <p class="btn btn-nuevo">
-              <a href="/Perfil/Create">Crear nuevo</a>
-            </p>
           </ul>
         </div>
       </main>

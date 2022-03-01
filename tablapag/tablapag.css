@@ -1,47 +1,96 @@
+.content {
+  margin-top: 3em;
+}
+
 .content > * + * {
-  margin-top: 1.2em;
+  margin-top: 1.5em;
 }
 
-.table__wrapper {
+.create {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.tablee {
+table {
   border-collapse: collapse;
+  margin: 0;
+  padding: 0;
   width: 100%;
-  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
-    0 15px 40px rgba(166, 173, 201, 0.2);
+  table-layout: fixed;
+  border-bottom: 2px solid #2b2b2b;
 }
 
-.table__head {
-  background-color: var(--tec-color);
-  color: white;
-  font-size: 1.1rem;
-  text-align: left;
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
 }
 
-.table__head th {
-  font-weight: 500;
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
 }
 
-.tablee tbody tr {
-  border-bottom: 1px solid #dddddd;
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
 }
 
-.tablee tbody tr:nth-of-type(even) {
-  background-color: #f1ebe1;
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
 }
 
-.tablee tbody tr:last-of-type {
-  border-bottom: 2px solid var(--tec-color);
-}
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
 
-.tablee td,
-.tablee th {
-  padding: 0.5em;
-}
-
-.tablee td {
-  font-size: 0.9rem;
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
 }
 
 ul {
@@ -74,7 +123,7 @@ ul {
 }
 
 .btn-previous {
-  border: 2px solid var(--tec-color);
+  border: 2px solid ;
   background-color: transparent;
 }
 
@@ -85,19 +134,17 @@ ul {
 .btn-nuevo {
   transition: all 250ms;
   color: white;
-  background-color: var(--cta-color) ;
-  margin: 0 0 0 auto;
+  background-color: var(--tec-color) ;
 }
 
 .btn-nuevo:hover {
   transition: all 250ms;
   box-shadow: var(--nextjs-box-shadow);
-
 }
 
 .btn-next {
   border: 2.5px solid transparent;
-  background-color: var(--tec-color);
+  background-color: #2b2b2b;
   color: white;
 }
 
