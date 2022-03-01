@@ -2,46 +2,71 @@
   margin-top: 3em;
 }
 
-.content > * + * {
-  margin-top: 1.5em;
-}
-
 .create {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-table {
-  border-collapse: collapse;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  table-layout: fixed;
-  border-bottom: 2px solid #2b2b2b;
+.create__text {
+  border-left: 4px solid #444343;
+  padding-left: 0.5em;
 }
 
-table caption {
-  font-size: 1.5em;
-  margin: .5em 0 .75em;
+table {
+  border-collapse: collapse;
+  /* max-width: 100%;
+  min-width: 400px; */
+  /* width: min(100%, 500px); */
+  width: 100%;
+  margin: 1.5em 0;
+  padding: 0;
+  table-layout: fixed;
+  border-bottom: 2px solid #2b2b2b;
 }
 
 table tr {
   background-color: #f8f8f8;
   border: 1px solid #ddd;
-  padding: .35em;
+  padding: 0.35em;
 }
 
 table th,
 table td {
-  padding: .625em;
-  text-align: center;
+  padding: 0.625em;
+  text-align: left;
+}
+
+table td {
+  color: #2f2f2f;
+  word-break: break-all;
 }
 
 table th {
-  font-size: .85em;
-  letter-spacing: .1em;
+  font-size: 1rem;
+  font-weight: 450;
+  color: white;
+  background-color: #2b2b2b;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+
+.action_buttons {
+  display: flex;
+  gap: 0 1em;
+  justify-content: end;
+}
+
+.action_buttons * {
+  cursor: pointer;
+}
+
+.edit-icon {
+  color: #c3ad00;
+}
+
+.erase-icon {
+  color: #c30000;
 }
 
 @media screen and (max-width: 600px) {
@@ -49,10 +74,6 @@ table th {
     border: 0;
   }
 
-  table caption {
-    font-size: 1.3em;
-  }
-  
   table thead {
     border: none;
     clip: rect(0 0 0 0);
@@ -63,20 +84,20 @@ table th {
     position: absolute;
     width: 1px;
   }
-  
+
   table tr {
     border-bottom: 3px solid #ddd;
     display: block;
-    margin-bottom: .625em;
+    margin-bottom: 0.625em;
   }
-  
+
   table td {
     border-bottom: 1px solid #ddd;
     display: block;
-    font-size: .8em;
+    font-size: 0.8em;
     text-align: right;
   }
-  
+
   table td::before {
     /*
     * aria-label has no advantage, it won't be read inside a table
@@ -84,10 +105,9 @@ table th {
     */
     content: attr(data-label);
     float: left;
-    font-weight: bold;
     text-transform: uppercase;
   }
-  
+
   table td:last-child {
     border-bottom: 0;
   }
@@ -114,7 +134,7 @@ ul {
   transition: all 200ms ease;
   cursor: pointer;
   display: inline-block;
-  border: 2.5px solid transparent
+  border: 2.5px solid transparent;
 }
 
 .btn:hover {
@@ -123,7 +143,7 @@ ul {
 }
 
 .btn-previous {
-  border: 2px solid ;
+  border: 2px solid;
   background-color: transparent;
 }
 
@@ -134,7 +154,7 @@ ul {
 .btn-nuevo {
   transition: all 250ms;
   color: white;
-  background-color: var(--tec-color) ;
+  background-color: var(--tec-color);
 }
 
 .btn-nuevo:hover {

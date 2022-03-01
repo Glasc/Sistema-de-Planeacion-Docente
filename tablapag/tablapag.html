@@ -6,88 +6,115 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tablapag</title>
-    <script
-      src="https://kit.fontawesome.com/01adc37bf7.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../shared/base.css" />
-    <link rel="stylesheet" href="../shared/navbar.css" />
-    <link rel="stylesheet" href="./tablapag.css" />
-  </head>
-  <body>
-    <div class="container">
-      <nav>
-        <img class="nav__logo" src="../assets/teclogo.jpg" alt="logo" />
-        <h1 class="nav__text">Sistema de Planeación Docente</h1>
-        <div class="nav__options">
-          <h3>Bienvenido, César</h3>
-          <section>
-            <i class="logoutIcon fa-lg fa-solid fa-right-from-bracket"></i>
-            <p>Cerrar sesión</p>
-          </section>
-        </div>
-      </nav>
-      <main>
-        <div class="content">
-          
-          <section class="create">
-            <h2>Index</h2>
-            <p class="btn btn-nuevo">
-              <a href="/Perfil/Create">Crear nuevo</a>
-            </p>
-          </section>
 
-          <div class="table__wrapper" style="overflow-x: auto">
-            <table>
-              <thead>
-                <tr>
-                  <th>Account</th>
-                  <th>Due Date</th>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tablapag</title>
+  <script src="https://kit.fontawesome.com/01adc37bf7.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../shared/base.css" />
+  <link rel="stylesheet" href="../shared/navbar.css" />
+  <link rel="stylesheet" href="./tablapag.css" />
+</head>
 
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Visa - 3412</td>
-                  <td>04/01/2016</td>
+<body>
+  <div class="container">
+    <nav>
+      <img class="nav__logo" src="../assets/teclogo.jpg" alt="logo" />
+      <h1 class="nav__text">Sistema de Planeación Docente</h1>
+      <div class="nav__options">
+        <h3>Bienvenido, César</h3>
+        <section class="action_buttons">
+          <i class="logoutIcon fa-lg fa-solid fa-right-from-bracket"></i>
+          <p>Cerrar sesión</p>
+        </section>
+      </div>
+    </nav>
+    <main>
+      <div class="content">
 
-                </tr>
-                <tr>
-                  <td>Visa - 6076</td>
-                  <td>03/01/2016</td>
+        <section class="create">
+          <h2 class="create__text">Index</h2>
+          <p class="btn btn-nuevo">
+            <a href="/Perfil/Create">Crear nuevo</a>
+          </p>
+        </section>
 
-                </tr>
-                <tr>
-                  <td>Corporate AMEX</td>
-                  <td>03/01/2016</td>
+        <div class="table__wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Nombre del perfil</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Administrador</td>
+                <td>
+                  <section class="action_buttons">
+                    <article><i class="fa-solid fa-lg fa-pen-to-square edit-icon"></i></article>
+                    <article><i class="fa-solid fa-lg fa-trash-can erase-icon"></i></article>
+                  </section>
+                </td>
+              </tr>
+              <tr>
+                <td>Operador</td>
+                <td>
+                  <section class="action_buttons">
+                    <article><i class="fa-solid fa-lg fa-pen-to-square edit-icon"></i></article>
+                    <article><i class="fa-solid fa-lg fa-trash-can erase-icon"></i></article>
+                  </section>
+                </td>
 
-                </tr>
-                <tr>
-                  <td>Visa - 3412</td>
-                  <td>02/01/2016</td>
+              </tr>
+              <tr>
+                <td>loganA</td>
+                <td>
+                  <section class="action_buttons">
+                    <article><i class="fa-solid fa-lg fa-pen-to-square edit-icon"></i></article>
+                    <article><i class="fa-solid fa-lg fa-trash-can erase-icon"></i></article>
+                  </section>
+                </td>
 
-                </tr>
-              </tbody>
-            </table>
+              </tr>
+              <tr>
+                <td>cambio</td>
+                <td>
+                  <section class="action_buttons">
+                    <article><i class="fa-solid fa-lg fa-pen-to-square edit-icon"></i></article>
+                    <article><i class="fa-solid fa-lg fa-trash-can erase-icon"></i></article>
+                  </section>
+                </td>
+
+              </tr>
+              <tr>
+                <td>prueba 3</td>
+                <td>
+                  <section class="action_buttons fitwidth">
+                    <article><i class="fa-solid fa-lg fa-pen-to-square edit-icon"></i></article>
+                    <article><i class="fa-solid fa-lg fa-trash-can erase-icon"></i></article>
+                  </section>
+                </td>
+
+              </tr>
+            </tbody>
+          </table>
           <ul class="pagination">
             <li class="btn btn-previous disabled">
-              <a href="/Perfil/Index/1">< Anterior</a>
+              <a href="/Perfil/Index/1">
+                < Anterior</a>
             </li>
             <li class="btn btn-next">
               <a href="/Perfil/Index/2">Siguiente ></a>
             </li>
           </ul>
         </div>
-      </main>
-    </div>
-  </body>
+    </main>
+  </div>
+</body>
+
 </html>
