@@ -73,9 +73,13 @@ ul {
   transition: all 200ms ease;
 }
 
-.btn-disabled {
-  border: 2.5px solid var(--tec-color);
+.btn-previous {
+  border: 2px solid var(--tec-color);
   background-color: transparent;
+}
+
+.btn-previous:hover {
+  background-color: var(--tec-color-morelighter);
 }
 
 .btn-nuevo {
