@@ -34,8 +34,8 @@
       </div>
     </nav>
     <main>
-      <div class="content">
 
+      <div class="content">
         <section class="create">
           <h2 class="create__text">Index</h2>
           <p class="btn btn-nuevo">
@@ -43,7 +43,7 @@
           </p>
         </section>
 
-        <div class="table__wrapper">
+        <div>
           <table>
             <thead>
               <tr>
@@ -69,7 +69,6 @@
                     <article><i class="fa-solid fa-lg fa-trash-can erase-icon"></i></article>
                   </section>
                 </td>
-
               </tr>
               <tr>
                 <td>loganA</td>
@@ -85,8 +84,8 @@
                 <td>cambio</td>
                 <td>
                   <section class="action_buttons">
-                    <article><i class="fa-solid fa-lg fa-pen-to-square edit-icon"></i></article>
-                    <article><i class="fa-solid fa-lg fa-trash-can erase-icon"></i></article>
+                    <article class="edit-icon"><i class="fa-solid fa-lg fa-pen-to-square"></i></article>
+                    <article class="erase-icon"><i class="fa-solid fa-lg fa-trash-can"></i></article>
                   </section>
                 </td>
 
@@ -109,8 +108,8 @@
                 < Anterior</a>
             </li>
             <li class="btn btn-next">
-              <a href="/Perfil/Index/2">Siguiente ></a>
-            </li>
+              <a href="/Perfil/Index/2" disabled="disabled">Siguiente ></a>
+            </li> 
           </ul>
         </div>
     </main>

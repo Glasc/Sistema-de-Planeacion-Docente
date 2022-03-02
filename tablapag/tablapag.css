@@ -53,21 +53,31 @@ table th {
 
 .action_buttons {
   display: flex;
-  gap: 0 1em;
+  gap: 0 1.5em;
   justify-content: end;
 }
 
 .action_buttons * {
   cursor: pointer;
+  border: 2px solid transparent;
+  padding: 0.2em 0.1em;
 }
 
 .edit-icon {
   color: #c3ad00;
+  transition: all 250ms;
+}
+
+.edit-icon:hover {
+  border: 2px solid #2b2b2b;
+  transition: all 250ms;
+  border-radius: 5px;
 }
 
 .erase-icon {
   color: #c30000;
 }
+
 
 @media screen and (max-width: 600px) {
   table {
@@ -130,11 +140,15 @@ ul {
   background-color: white;
   color: #2b2b2b;
   border-radius: 6px;
-  padding: 0.5em 1em;
   transition: all 200ms ease;
   cursor: pointer;
   display: inline-block;
   border: 2.5px solid transparent;
+}
+
+.btn a {
+  display: block;
+  padding: 0.5em 1em;
 }
 
 .btn:hover {
@@ -144,11 +158,16 @@ ul {
 
 .btn-previous {
   border: 2px solid;
-  background-color: transparent;
+  color: gray;
+  background-color: rgb(236, 236, 236);
+}
+
+.btn-previous a {
+  cursor: not-allowed;
 }
 
 .btn-previous:hover {
-  background-color: var(--tec-color-morelighter);
+  filter: none;
 }
 
 .btn-nuevo {
@@ -166,6 +185,10 @@ ul {
   border: 2.5px solid transparent;
   background-color: #2b2b2b;
   color: white;
+}
+
+.btn-next:hover {
+  background-color: #4d4d4d;
 }
 
 a {
