@@ -60,7 +60,6 @@ table th {
 .action_buttons * {
   cursor: pointer;
   border: 2px solid transparent;
-  padding: 0.2em 0.1em;
 }
 
 .edit-icon {
@@ -174,11 +173,6 @@ ul {
   transition: all 250ms;
   color: white;
   background-color: var(--tec-color);
-}
-
-.btn-nuevo:hover {
-  transition: all 250ms;
-  box-shadow: var(--nextjs-box-shadow);
 }
 
 .btn-next {
