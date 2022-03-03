@@ -45,8 +45,9 @@
 
 .form__input:focus {
   outline: none;
-  border: 2px solid #dbba78;
+  background-color: #dbcfb9;
   transition: all 250ms;
+
 }
 
 .control-label {
