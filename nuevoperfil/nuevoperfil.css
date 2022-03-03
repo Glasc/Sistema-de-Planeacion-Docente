@@ -97,7 +97,7 @@
 .goback:hover {
   background-color: none;
   transition: all 300ms;
-  background-color: rgb(251, 251, 251);
+  border: 2px solid var(--tec-color-tertiary);
 }
 
 .goback__icon {
