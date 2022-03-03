@@ -41,17 +41,19 @@
   border-radius: 5px;
   border: 2px solid transparent;
   transition: all 250ms;
+  color: #2b2b2b;
 }
 
 .form__input:focus {
   outline: none;
-  background-color: #dbcfb9;
   transition: all 250ms;
+  background-color: rgb(238, 230, 210);
+  /* border: 2px solid #c0ad3f; */
 
 }
 
 .control-label {
-  color: rgb(70, 70, 70);
+  color: rgb(65, 65, 65);
 }
 
 .btn-guardar {
@@ -94,8 +96,9 @@
 
 .goback:hover {
   background-color: none;
-  border: 2px solid rgb(185, 185, 185);
   transition: all 300ms;
+  border: 2px solid rgb(199, 199, 199);
+  
 }
 
 .goback__icon {
