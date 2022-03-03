@@ -42,17 +42,16 @@
   margin: 0.5em 0;
   border: none;
   border-radius: 5px;
-  border: 2px solid transparent;
-  background-color: #e4e4e4;
+  border: 2px solid rgb(200, 200, 200);
+  background-color: white;
   transition: all 250ms;
   color: black;
 }
 
 .form__input:focus {
   outline: none;
-  transition: all 250ms;
+  transition: all 250mbs;
   border: 2px solid #2b2b2b;
-
 }
 
 .control-label {
