@@ -57,7 +57,7 @@
   color: rgb(65, 65, 65);
 }
 
-.btn-guardar {
+.btn-save {
   display: inline-block;
   font-weight: 450;
   color: #ffffff;
@@ -73,7 +73,7 @@
   background-color: #2b2b2b;
 }
 
-.btn-guardar:hover {
+.btn-save:hover {
   background-color: #4d4d4d;
   transition: all 250ms;
 }
