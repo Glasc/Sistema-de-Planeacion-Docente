@@ -89,13 +89,13 @@
   margin: 0.5em 0;
   transition: all 300ms;
   background-color: white;
-  border-bottom: 2.5px solid transparent;
+  border: 2px solid rgb(235, 235, 235);
 }
 
 .goback:hover {
-  background-color: white;
+  background-color: none;
+  border: 2px solid rgb(185, 185, 185);
   transition: all 300ms;
-  border-bottom: 2.5px solid #d7cfbf;
 }
 
 .goback__icon {
