@@ -35,11 +35,12 @@ body {
 
 body {
   position: relative;
+  max-width: 100%;
 }
 
 .container {
   min-height: 100%;
-  width: min(90%, 900px);
+  width: min(90%, 900px)  ;
   z-index: 1;
 }
 
