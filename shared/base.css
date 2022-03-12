@@ -11,6 +11,8 @@
   --secondary-color: #474747;
   --tertiary-color: #f5f5f5;  
   --nextjs-box-shadow: 0 6px 20px rgba(200, 163, 62, 0.23);
+  --black-secondary: #495057;
+  --black-tertiary: #868e96;
 }
 
 /* reset default browser properties */

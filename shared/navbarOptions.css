@@ -1,0 +1,174 @@
+.nav {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-auto-columns: auto;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 1.5em;
+  margin-top: 1em;
+  position: sticky;
+  top: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.nav__links {
+  display: flex;
+  gap: 0 1.5em;
+}
+
+.nav__links * {
+  border-bottom: 3px solid transparent;
+  transition: all 280ms;
+  padding: 0.25em 0.35em;
+}
+
+.nav .nav__links * > a:hover {
+  padding: 0.25em 0.35em;
+  border-bottom: 3px solid #2b2b2b;
+  transition: all 280ms;
+  cursor: pointer;
+}
+
+.nav__links:hover {
+}
+
+.nav__logo {
+  width: 95px;
+}
+
+.nav__text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  margin: 0 auto;
+  text-align: center;
+  user-select: none;
+}
+
+.nav__options {
+}
+
+.nav__options > * + * {
+  margin-top: 0.4em;
+}
+
+.nav__options h3 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+
+.nav__options section {
+  display: flex;
+  align-items: center;
+  color: #c72828;
+  cursor: pointer;
+  height: auto;
+}
+
+.nav__options section > * + * {
+  margin-left: 0.5em;
+  text-decoration: underline;
+}
+
+.nav__options > .logoutIcon {
+  width: 60px;
+}
+
+.nav--tiny {
+  display: none;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 870px) {
+  .nav {
+    display: none;
+  }
+
+  .nav--tiny .nav__header {
+    font-size: 2rem;
+    color: black;
+  }
+
+  .nav--tiny {
+    background-color: white;
+    margin-bottom: 1.5em;
+    padding: 1em 2em;
+    display: block;
+    border-bottom: 1px solid rgb(207, 207, 207);
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
+
+  .nav__top {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 0.5em 0em;
+    width: 100%;
+  }
+
+  .nav--tiny .nav__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    font-size: 1.1rem;
+  }
+
+  .nav--tiny a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .nav--tiny > .nav__links > * {
+    text-decoration: none;
+    padding: 0.25em 0;
+    padding-left: 1em;
+    font-weight: 400;
+    width: 100%;
+    border: none;
+    color: var(--black-secondary);
+    transition: all 300ms;
+    border-left: 6px solid var(--tec-color-secondary);
+    margin: 0.5em 0;
+  }
+
+  .nav--tiny .nav__links *:focus {
+    transition: all 300ms;
+    padding-left: 2em;
+    background-color: rgb(238, 231, 187);
+  }
+
+  .hamburguerIcon {
+    cursor: pointer;
+    padding: 1em 0.75em;
+    color: black;
+  }
+
+  .hamburguerIcon:hover {
+    display: block;
+    background-color: var(--tec-color-tertiary);
+    border-radius: 10px;
+  }
+
+  .hamburguerIcon_wrapper:focus {
+    display: block;
+    background-color: var(--tec-color-tertiary);
+    border-radius: 10px;
+  }
+
+  .hamburguerIcon,
+  .hamburguerIcon:hover {
+    transition: all 300ms;
+  }
+}

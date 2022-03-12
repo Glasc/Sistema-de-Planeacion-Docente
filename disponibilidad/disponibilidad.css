@@ -2,39 +2,90 @@ main > * + * {
   margin-top: 1em;
 }
 
-.go-back {
-  display: inline-flex;
+.goback {
+  display: flex;
   align-items: center;
-  gap: 1em;
+  gap: 0 3em;
   border-radius: 7px;
-  background-color: white;
-  box-shadow: 0 2px 10px rgba(50, 50, 93, 0.1);
-  cursor: pointer;
-  width: auto;
-  padding: 0.7em 1.2em;
-  transition: all 250ms;
+  display: inline-block;
+  margin-top: 1em;
+  background-color: transparent;
+  padding: 0.35em 1em;
+  text-decoration: none;
+  color: #525252;
+  transition: all 300ms;
+  background-color: var(--tec-color);
+  color: white;
 }
 
-.go-back span {
-  text-decoration: underline;
+.goback:hover {
+  box-shadow: 0 6px 20px rgba(200, 163, 62, 0.23);
+  background-color: none;
+  transition: all 300ms;
+  filter: brightness(111%);
 }
 
-.go-back:hover {
-  background-color: var(--tec-color-tertiary);
-  transition: all 250ms;
+.goback__icon {
+  padding: 0 0.5em 0 0;
 }
 
 main section {
   display: flex;
-  align-items: center;
+  align-items: start;
   gap: 1.5em;
   border-radius: 17px;
 }
 
-.table {
-  background-color: gainsboro;
-  height: 400px;
-  width: 75%;
+
+table {
+  border-collapse: collapse;
+  /* max-width: 100%;
+  min-width: 400px; */
+  /* width: min(100%, 500px); */
+  width: 100%;
+  margin-top: 0;
+  padding: 0;
+  table-layout: fixed;
+  border-bottom: 2px solid #2b2b2b;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 0.35em;
+}
+
+table th,
+table td {
+  padding: 0.625em;
+  text-align: left;
+}
+
+table td {
+  color: #2f2f2f;
+  word-break: break-all;
+}
+
+table td:hover {
+  background-color: rgb(229, 229, 229);
+}
+
+table th {
+  font-size: 1rem;
+  font-weight: 450;
+  color: white;
+  background-color: #2b2b2b;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.table-panel {
+  display: flex;
+  align-items: start;
+}
+.table-panel button {
+  position: sticky;
+  top: 0;
 }
 
 .menus {
@@ -43,6 +94,8 @@ main section {
   justify-content: center;
   align-items: center;
   gap: 1em;
+  position: sticky;
+  top: 1em;
 }
 
 .menu__info {
@@ -90,7 +143,7 @@ main section {
 }
 
 .menu__button {
-  background-color: var(--tec-color);
+  background-color: #2b2b2b;
   font-weight: 450;
   width: 100%;
   color: #ffffff;
@@ -100,12 +153,12 @@ main section {
   cursor: pointer;
   display: block;
   font-size: 1rem;
-  transition: all 200ms;
+  transition: all 250ms;
 }
 
 .menu__button:hover {
-  transition: all 200ms;
-  box-shadow: 0 4px 14px 0 var(--tec-color-tertiary);
+  transition: all 250ms;
+  background-color: #484848;
 }
 
 .menu__button:focus {
